@@ -1,0 +1,197 @@
+
+#main-container { background-color: #f4f5f6;}
+
+
+.calendar { margin-top: 20px; }
+
+.calendar__results,
+.calendar__desktop { 
+  background-color: #fff;
+}
+
+.calendar__results-container,
+.calendar__desktop-title { padding: 15px;}
+
+/*--Overwrite of the default styling for materialize--*/
+input[type=text] { 
+  border-bottom: 1px solid #fff;
+}
+
+.picker__weekday-display { background-color: #0277BD; }
+
+.picker__date-display,
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected { background-color: #03A9F4; }
+
+.picker__day.picker__day--today,
+.picker__close,
+.picker__today { color: #03A9F4;}
+/*--/Overwrite of the default styling for materialize--*/
+
+/* --------------------------
+RESULTS
+-------------------------- */
+
+.calendar__results-title { 
+  padding-bottom: 15px;
+  border-bottom: 5px solid #46BCEB;
+}
+
+.calendar__results-title h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.calendar__results-title span { font-size: 16px; }
+
+.calendar__results-table__event-content h3 { 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*--MOBILE ONLY INPUT FIELD--*/
+.calendar__results-mobile-input { color: #fff; }
+
+.calendar__results-mobile-input .row { margin-bottom: 0; }
+
+.calendar__results-mobile-input .input-field { margin-top: 30px; }
+/*--/MOBILE ONLY INPUT FIELD--*/
+
+.calendar__results-mobile-input .input-field label {
+  font-size: 16px;
+  color: #fafafa;
+  font-weight: 300;
+}
+
+.calendar__results-mobile-input .input-field input {
+  font-size: 13px;
+}
+
+.calendar__results-table { margin-top: 15px; }
+
+/* --------------------------
+DESKTOP RIGHT VIEW
+-------------------------- */
+
+.calendar__desktop-title,
+.calendar__results-mobile-input {
+  background-color: #03a9f4;
+  padding: 15px;
+}
+
+.calendar__desktop-title h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.calendar__desktop-view { padding: 15px; }
+
+
+/* --------------------------
+CALENDAR
+-------------------------- */
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #03a9f4;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  border-radius: 50%;
+    padding: 5px;
+    background: #03a9f4;
+    color: white !important;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 12.5%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 11.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 11.2%;}
+}
+
+
+/* --------------------------
+MOBILE
+-------------------------- */
+
+/*--space for the desktop view between the results and right calendar view--*/
+@media only screen and (min-width: 601px) {
+  .calendar__results { margin-right: 20px; }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .calendar__results-mobile-input .input-field input { font-size: 16px; }
+}
