@@ -12,7 +12,11 @@
   transition: .35s ease-in-out;
   z-index: 2000;
 
+  -webkit-overflow-scrolling: touch;
+
 }
+
+.mobile-global-nav a { color: #333}
 
 .mobile-global-nav.active {
   top: 0;
@@ -101,3 +105,18 @@ button#mobile-global-close {
   padding: 23px;
 
 }
+
+.mobile-content {
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+.section-nav--mobile > ul { margin-top: 0; }
+
+.section-nav--mobile a { line-height: 48px;}
