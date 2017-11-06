@@ -193,9 +193,14 @@ if($('.calendar-start').length) {
     mobileMenu.on('click', function(e) {
       e.preventDefault();
 
-      $(this).next().slideToggle();
-      $(this).toggleClass('open');
+      $('.mobile-global-nav').addClass('active');
+
     });
+
+    $('#mobile-global-close').on ('click', function(e){
+      e.preventDefault();
+      $('.mobile-global-nav').removeClass('active');
+    })
 
 
   function searchFocus(){
