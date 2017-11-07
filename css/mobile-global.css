@@ -18,6 +18,8 @@
 
 .mobile-global-nav a { color: #333}
 
+.mobile-global-nav a:hover { text-decoration: none; }
+
 .mobile-global-nav.active {
   top: 0;
 }
@@ -55,7 +57,7 @@
 .mobile-top-menu__tab a > i { height: auto; }
 
 
-.mobile-top-menu__tab--active {
+.mobile-top-menu__tab--active  > div{
   padding-bottom: 1px;
   height: 61px;
   background: #fff;
@@ -117,6 +119,19 @@ button#mobile-global-close {
   overflow-y: auto;
 }
 
-.section-nav--mobile > ul { margin-top: 0; }
+.mobile-content-tab { display: none; }
 
-.section-nav--mobile a { line-height: 48px;}
+.mobile-content-tab--active { display: inherit; } 
+
+.mobile-content-tab
+
+.mobile-content ul { margin-top: 0; }
+
+.mobile-content a { line-height: 48px;}
+
+.divider-full {
+  width: calc(100% + 30px);
+  height: 2px;
+  background-color: #e5e5e5;
+  margin: 7px 0 10px -15px;
+}

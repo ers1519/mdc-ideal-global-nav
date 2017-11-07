@@ -492,17 +492,17 @@
 
 
 											<ul class="mobile-top-menu__tabs">
-												<li>
-													<div class="mobile-top-menu__tab mobile-top-menu__tab--active">
+												<li class="mobile-top-menu__tab--active" data-tab="mobile-global">
+													<div class="mobile-top-menu__tab">
 														<a href="#">Global</a>
 													</div>
 												</li>
-												<li>
+												<li data-tab="mobile-site">
 													<div class="mobile-top-menu__tab">
 														<a href="#">Site</a>
 													</div>
 												</li>
-												<li>
+												<li data-tab="mobile-login">
 													<div class="mobile-top-menu__tab">
 														<a href="#">
 															<i class="fa fa-user" aria-hidden="true"></i>
@@ -516,32 +516,45 @@
 											</button>
 
 											<div class="mobile-content">
-												<div class="section-nav--mobile">
+
+												<div class="mobile-content-tab mobile-content-tab--active mobile-content__global-container" id="mobile-global">
 													<ul>
-														<li><a href="">Nav 01</a></li>
-														<li><a href="">Nav 02</a></li>
-														<li><a href="">Nav 03</a></li>
-														<li><a href="">Nav 04</a></li>
-														<li><a href="">Nav 05</a></li>
-														<li><a href="">Nav 06</a></li>
-														<li><a href="">Nav 07</a></li>
-														<li><a href="">Nav 08</a></li>
-														<li><a href="">Nav 09</a></li>
-														<li><a href="">Nav 10</a></li>
-														<li><a href="">Nav 11</a></li>
-														<li><a href="">Nav 12</a></li>
-														<li><a href="">Nav 13</a></li>
-														<li><a href="">Nav 14</a></li>
-														<li><a href="">Nav 15</a></li>
-														<li><a href="">Nav 16</a></li>
-														<li><a href="">Nav 17</a></li>
-														<li><a href="">Nav 18</a></li>
-														<li><a href="">Nav 19</a></li>
-														<li><a href="">Nav 20</a></li>
-														<li><a href="">Nav 21</a></li>
-														<li><a href="">Nav 22</a></li>
+														<li><a href="">Grants</a></li>
+														<li><a href="">Licenses</a></li>
+														<li><a href="">News</a></li>
+														<li><a href="">Permits</a></li>
+														<li><a href="">Products</a></li>
+														<li><a href="">Services</a></li>
+													</ul>
+
+													<div class="divider-full"></div>
+
+													<div class="section-nav--mobile">
+														<ul>
+															<li><a href="">Nav 01</a></li>
+															<li><a href="">Nav 02</a></li>
+															<li><a href="">Nav 03</a></li>
+															<li><a href="">Nav 04</a></li>
+															<li><a href="">Nav 05</a></li>
+															<li><a href="">Nav 06</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="mobile-content-tab mobile-content__site-container" id="mobile-site">
+													<ul>
+														<li><a href="#">Site Content</a></li>
 													</ul>
 												</div>
+
+												<div class="mobile-content-tab mobile-content__user-container" id="mobile-login">
+													<ul>
+														<li><a href="#">Login</a></li>
+													</ul>
+												</div>
+
+
+
 											</div>
 												
 

@@ -188,21 +188,6 @@ if($('.calendar-start').length) {
 
   });
 
-    var mobileMenu = $('#mobile-menu').unbind();
-
-    mobileMenu.on('click', function(e) {
-      e.preventDefault();
-
-      $('.mobile-global-nav').addClass('active');
-
-    });
-
-    $('#mobile-global-close').on ('click', function(e){
-      e.preventDefault();
-      $('.mobile-global-nav').removeClass('active');
-    })
-
-
   function searchFocus(){
     $('#search-query, #search-query-mobile').focus()
   }
@@ -250,5 +235,37 @@ if($('.calendar-start').length) {
 
     e.preventDefault();
   });
+
+
+    //mobile jquery ------------
+
+    var mobileMenu = $('#mobile-menu').unbind();
+
+    mobileMenu.on('click', function(e) {
+      e.preventDefault();
+
+      $('.mobile-global-nav').addClass('active');
+
+    });
+
+    $('#mobile-global-close').on ('click', function(e){
+      e.preventDefault();
+      $('.mobile-global-nav').removeClass('active');
+    });
+
+
+    //mobile tabs ------------
+    $('ul.mobile-top-menu__tabs li').on('click', function(e){
+      e.preventDefault;
+
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.mobile-top-menu__tabs li').removeClass('mobile-top-menu__tab--active');
+        $('.mobile-content-tab').removeClass('mobile-content-tab--active');
+
+        $(this).addClass('mobile-top-menu__tab--active');
+        $("#"+tab_id).addClass('mobile-content-tab--active');
+    });
+
 
 });
