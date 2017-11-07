@@ -111,9 +111,15 @@ HEADER / LOG IN OUT / SOCIAL MEDIA
 -------------------------- */
 
 .log-in-out {
-	display: inline-block;
+  display: inline-block;
   vertical-align: top;
-  margin-right: 50px;
+  margin:0 20px 0 30px;
+}
+
+.sign-up {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
 }
 
 .global-social-login {
@@ -136,6 +142,8 @@ HEADER / LOG IN OUT / SOCIAL MEDIA
 .social-media {
 	display: inline-block;
   vertical-align: top;
+	border-right: 2px #FFF solid;
+	padding-right: 35px;
 }
 
 .social-media ul {
@@ -181,6 +189,10 @@ nav ul a, nav .brand-logo {
 
 .social-login-container, nav ul a {
   font-size: 1.3rem;
+}
+
+.social-login-container img {
+  margin-right:15px;
 }
 
 /* --- search component --- */
@@ -1366,7 +1378,12 @@ MOBILE
     margin-top: 3px;
     width: 55%;
   }
-
+	
+  nav .miamidade-logo {
+   margin-top: 3px;
+   width: 55%;
+  }
+	
   .mobile-menu-bars { margin-top: 15px; }
 
   nav { position: relative; }
