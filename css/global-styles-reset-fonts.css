@@ -1396,42 +1396,6 @@ MOBILE
 
   .global-nav-container ul li a { color: #03a9f4; }
 
-  .dropdown:before,
-  .sub-dropdown-container > li:before {
-    content: "\f107";
-    color: #03a9f4;
-    font-family: 'FontAwesome';
-    font-size: 1.5rem;
-    float: right;
-    margin-right: 25px;
-
-  }
-
-  .site-nav-content li { border-bottom: 1px solid #E2E6E7; }
-
-  .site-nav-content > li:last-child { border-width: 0; }
-
-  .dropdown ul {
-    margin-left: 20px;
-    display: none;
-  }
-
-  /*--- Secondary nav ---*/
-
-  .secondary-menu { 
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .secondary-menu li {
-    flex: 0 50%;
-  }
-  .secondary-menu a {
-    display: block;
-    color: #333;
-  }
-
-
 }
 
 @media only screen and (max-width: 600px){

@@ -127,7 +127,10 @@ button#mobile-global-close {
 
 .mobile-content ul { margin-top: 0; }
 
-.mobile-content a { line-height: 48px;}
+.mobile-content a {
+  display: block; 
+  line-height: 48px;
+}
 
 .divider-full {
   width: calc(100% + 30px);
@@ -135,3 +138,80 @@ button#mobile-global-close {
   background-color: #e5e5e5;
   margin: 7px 0 10px -15px;
 }
+
+.section-nav--mobile > ul.site-nav-content {
+  float: inherit !important;
+}
+
+
+.section-nav--mobile .dropdown {
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.section-nav--mobile .sub-dropdown-container > li {
+  position: relative;
+}
+
+.section-nav--mobile .dropdown > a {
+  background-color: #fff;
+}
+
+
+.section-nav--mobile .dropdown ul {
+  margin-left: 20px;
+  display: none;
+}
+
+/* --------------
+
+Use these to have the plus and minus icon in the second level.
+
+Talk to COMM to see if they have to go that deep on mobile. 
+
+.section-nav--mobile .dropdown::before,
+.section-nav--mobile .dropdown::after,
+.section-nav--mobile .sub-dropdown-container > li::before,
+.section-nav--mobile .sub-dropdown-container > li::after
+
+------------------
+*/
+
+.section-nav--mobile .dropdown::before,
+.section-nav--mobile .dropdown::after {
+  position: absolute;
+
+  content: "";
+  background-color: #444;
+  transition: all 0.25s ease-in-out;
+}
+
+.section-nav--mobile .dropdown::before,
+.section-nav--mobile .sub-dropdown-container > li::before {
+  transform: rotate(0deg);
+  top: 17px;
+
+  width: 4px;
+  height: 12px;
+}
+
+.section-nav--mobile .dropdown.active::before,
+.section-nav--mobile .sub-dropdown-container > li.active::before {
+  transform: rotate(90deg);
+}
+
+.section-nav--mobile .dropdown::after,
+.section-nav--mobile .sub-dropdown-container > li::after {
+  top: 21px;
+
+  width: 12px;
+  height: 4px;
+}
+
+.section-nav--mobile .dropdown::after { right: 0; }
+
+.section-nav--mobile .dropdown::before { right: 4px; }
+
+.section-nav--mobile .sub-dropdown-container > li::before { right: 20px; }
+
+.section-nav--mobile .sub-dropdown-container > li::after { right: 16px; }
