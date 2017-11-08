@@ -3,7 +3,10 @@ function resizeId(){
 
   $(window).on('resize', function(e) {
     clearTimeout(resizeId);
-    resizeId = setTimeout(doneResizing, 350);
+    resizeId = setTimeout(function(){
+      doneResizing()
+      adaMobileShowHide()
+    }, 350);
   });
 
 }
@@ -47,6 +50,21 @@ function moveNavigationDesktop() {
   $('.site-nav-content').prependTo('.global-nav-container');
 
 }
+
+function adaMobileShowHide() {
+
+  //For ADA Compliance
+  if (window.innerWidth < '992'){
+
+    $('.mobile-global-nav').attr('aria-hidden', false);
+
+  } else {
+    $('.mobile-global-nav').attr('aria-hidden', true);
+
+  };
+
+}
+
 
 function checkDropdown(){
 
@@ -279,9 +297,9 @@ if($('.calendar-start').length) {
         $("#"+tab_id).addClass('mobile-content-tab--active');
     });
 
-
-  $('body').on('click', '.section-nav--mobile .dropdown > a, .section-nav--mobile .sub-dropdown-container > li > a', function(e) { 
-
+  //Uncomment below to include the sub dropdown on mobile ------------
+  //$('body').on('click', '.section-nav--mobile .dropdown > a, .section-nav--mobile .sub-dropdown-container > li > a', function(e) { 
+  $('body').on('click', '.section-nav--mobile .dropdown > a', function(e) { 
     e.preventDefault();
     $(this).next().slideToggle();
 
