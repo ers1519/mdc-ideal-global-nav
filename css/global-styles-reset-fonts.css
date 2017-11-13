@@ -1164,6 +1164,17 @@ MOBILE
     font-size: 1.3rem;
     float: right;
   }
+	
+	.top-nav-content {
+		margin-left:20px;
+		margin-top:0px;
+	}
+	
+	.top-nav-content li{
+     display: inline;
+     vertical-align: top;
+	 margin-right:22px;
+	}
 
   .mega-container ul li ul li:first-child select { margin: 0; }
 
