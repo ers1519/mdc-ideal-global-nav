@@ -42,6 +42,29 @@ img {
   font-size: 1.3rem;
 }
 
+/* David CSS for Idle Mockup Start */
+nav .input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
+    border: 1px solid #c3c0c0;
+}
+
+nav .input-field input {
+	height: 3.75rem;
+	width: 325px;
+}
+
+button {
+    height: 3.75rem;
+    MARGIN-TOP: 14PX;
+}
+
+nav i.material-icons {
+	
+	line-height: 35px;
+}
+
+
+/* David CSS for Idle Mockup End */
+
 .navbar-fixed {
   position: fixed;
   width: 100%;

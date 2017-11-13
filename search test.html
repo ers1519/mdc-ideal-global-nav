@@ -1,74 +1,601 @@
-<style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Miami-Dade County Template</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta name="description" content="Miami-Dade County Template">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+		<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/global-styles-reset-fonts.css">
+		<link rel="stylesheet" href="css/calendar-list.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+</head>
+	<body>
+		<div id="main-container">
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+			<!--Orginial Header-->
+			<header>
+				<div class="global-header-container navbar-fixed">
 
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
+				
+					<div class="global-social-login">
+								
+					
+						<div class="container hide-on-med-and-down">
+											
+							<div class="social-login-container right-align">
+					    			
+					    			<a href="#" id="logo-container" class="left brand-logo">
+										<img src="images/md-logo2.png" alt="Miami-Dade Website Logo">
+									</a>	
+				    	
+				    			    <a href="#" id="logo-container" class="left miamidade-logo">
+										<img src="images/miamidade-gov.png" alt="Miami-Dade Website Logo">
+							 		</a>	
+							 		
+							 			<ul class="left top-nav-content">
+							 				<li><a href="#">Ada</a></li>
+							 				<li><a href="#">311</a></li> 
+							 				<li><a href="#">Feedback</a></li>
+							 			</ul>
+					    	
+						    	<!--Social Media-->
+								<div class="social-media">
+									<ul>
+			              <li><span>Follow:</span></li>
+			              <li><a class="facebook-square" target="_blank" href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+			              <li><a class="twitter" target="_blank" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+			              <li><a class="instagram" target="_blank" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+			              <li><a class="youtube" target="_blank" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+			            </ul>
+								</div>
+								<!--/Social Media-->
+										<!--Login -->
+											<div class="log-in-out">
+												<a href="#"><i class="fa fa-sign-in"></i>Login</a>
+											</div>
+										<!--Sign Up -->
+											<div class="sign-up">
+												<a href="#">Sign Up</a>									
+										</div>
+										
+								<!--/Login-->
+							</div>
+						</div>
+					</div>
 
-.search {
-  width: 100%;
-  position: relative
-}
+					<!--div class="navbar-fixed"-->
+						<nav class="white" role="navigation">
+							<div class="nav-wrapper container">
+								
 
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
+								<a href="#" id="mobile-menu" class="hide-on-large-only">
+									<span>Menu</span>
+									  <div class="mobile-menu-bars" class="">
+									    <span></span>
+									    <span></span>
+									    <span></span>
+									    <span></span>
+									  </div>
+								</a>
+								
+								<div class="global-nav-container">
+									<ul class="left site-nav-content">
+										<li class="dropdown">
+											<a href="#">Home</a>
+											<ul class="sub-dropdown-container">
+												<li>
+													<a href="#">Animals & Pets</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Home & Neighborhood</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Housing & Social Services</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Employment & Training</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Open Spaces & Recreation</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Property & Land</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Public Safety</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Transportation & Roads</a>
+													<ul>
+														<li><a href="#">Adopt a Tree</a></li>
+														<li><a href="#">Housing Assistance</a></li>
+														<li><a href="#">Mosquito Control</a></li>
+														<li><a href="#">Recycling</a></li>
+														<li><a href="#">Waste Collection</a></li>
+														<li><a href="#">Waste Disposal Facilities</a></li>
+														<li><a href="#">Water & Sewer</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="#">Services</a>
+											<ul class="sub-dropdown-container">
+												<li>
+													<a href="">Department Directory</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Elected Officials</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Boards</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Trusts</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Locations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Services</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Licenses</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Permits</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Regulations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="#">News</a>
+											<ul class="sub-dropdown-container">
+												<li>
+													<a href="">Department Directory</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Elected Officials</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Boards</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Trusts</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Locations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Services</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Licenses</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Permits</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Regulations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="#">Agencies</a>
+											<ul class="sub-dropdown-container">
+												<li>
+													<a href="">Department Directory</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Elected Officials</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Boards</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Trusts</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Locations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Services</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Licenses</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Permits</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="">Regulations</a>
+													<ul>
+														<li><a href="">Home Chemical Collection Centers</a></li>
+														<li><a href="">Regional Transfer Stations</a></li>
+														<li><a href="">Landfills</a></li>
+														<li><a href="">Resources Recovery</a></li>
+														<li><a href="">Trash & Recycling Centers</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+										
+									</ul>
+									<ul class="secondary-menu hide-on-med-and-up">
+										<li><a href="#">miamidade.gov</a></li>
+										<li><a href="#">About Beta</a></li>
+										<li><a href="#">Feedback</a></li>
+										<li><a href="#">Newsletter</a></li>
+									</ul>
 
-.searchTerm:focus{
-  color: #00B4CC;
-}
+							
+								  				
+								<div class="right search-wrap row"> 																   
+									   <div class="search input-field col s12">
+										  <input type="text" class="browser-default form-control" placeholder="Search">
+										  <button type="submit" class="right searchButton">
+											<i class="fa fa-search"></i>
+										 </button>
+									   </div>
+									</div>
+					
+							
 
-.searchButton {
-  position: absolute;  
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-
-</style>
-   
-<body>
-   
-   
- 
-
-                           <div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="What are you looking for?">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-     </button>
-   </div>
-</div>
-
-
+				
+                      
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
   
- 
-</body>
+  <li><a href="#!">logout</a></li>
+</ul>
+
+
+		
+									
+									
+								</div>
+
+								<!--Mobile Navigation-->
+								<ul id="nav-mobile" class="side-nav">
+								   <li>
+								   	<div class="userView">
+								      <img class="background" src="images/office.jpg">
+								      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+								      <a href="#!name"><span class="white-text name">John Doe</span></a>
+								      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+								    </div>
+								   </li>
+									<li class="search">
+					          <div class="search-wrapper card">
+					            <input id="search-query-mobile" placeholder="Search"><i class="material-icons">search</i>
+					            <div class="search-results"></div>
+					          </div>
+					        </li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">Agencies</a></li>
+									<li><a href="#">Officials</a></li>
+									<li><a href="#">311/Help</a></li>
+					      </ul>
+					      <!--/Mobile Navigation-->
+
+
+								<!--/Global Navigation-->
+							</div>
+						</nav>
+					<!--/div-->
+
+				</div>
+			</header>
+			<!--/Orginial Header-->
+
+			<div id="main-body-content-container">
+			<!--Main Body -->
+			
+				<div class="container">
+
+					<header>
+						<h1 class="general-page__title margin-top-8x">Calendar of Events</h1>
+					</header>
+					
+					
+			
+					<div class="row">
+
+						<div class="col s12 m3">
+							<!--Sidebar-->
+							
+			
+								<div class="right search-wrap row">
+									   <div class="search input-field col s12">
+										  <input type="text" class="browser-default form-control" placeholder="Search">
+										  <button type="submit" class="searchButton">
+											<i class="fa fa-search"></i>
+										 </button>
+									   </div>
+									</div>
+									
+									
+									
+									
+									<div class="global-search-container">
+<div class="global-search">
+<input type="text" class="search-text" title="Miami-Dade Search" id="search-query" placeholder="Search Miami-Dade County" name=""><span class="search-button" id="search-button">
+<div class="fa fa-search"></div>
+</span>
+</div>
+</div>
+							
+			      </div>
+
+			    </div>
+			  </div>
+
+			</footer>
+
+
+		</div>
+	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!--script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script-->
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/global-scripts.js"></script>
+</html>
