@@ -108,6 +108,56 @@ h3.results-sub-title {
   flex: 1;
 }
 
+.global-social-login .row {
+  margin-bottom: 0;
+}
+
+.secondary-links {
+  display: table;
+}
+
+.secondary-links .column{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.secondary-links img {
+  margin-right: 10px;
+}
+
+.md-logo-header {
+  height: 30px;
+}
+
+.md-logo-miamidade {
+  vertical-align: super;
+}
+
+.social-login-container {
+  line-height: 35px;
+}
+
+.log-in-out {
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+
+.global-social-login ul.inline-list {
+  font-size: 13px;
+  margin: 0 0 0 20px;
+}
+
+.global-social-login ul.inline-list,
+.global-social-login ul.inline-list li {
+  display: inline-block;
+}
+
+.global-social-login ul.inline-list li {
+  margin-right: 20px;
+}
+
 /*--Tooltip --*/
 .material-tooltip {
   font-size: 14px;
