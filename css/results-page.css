@@ -1,3 +1,10 @@
+/*----------------------
+
+Input Group Search Container
+
+----------------------*/
+
+
 .input-group-search {
   display: table;
   width: 100%;
@@ -31,6 +38,7 @@
 .input-group-search .column .btn i,
 .input-group-search .column .btn span {
   margin: auto;
+  font-size: 13px;
 }
 
 .input-group-search .column:nth-of-type(1) {
@@ -50,6 +58,11 @@
   width: 10%;
 }
 
+.input-group-search .column:nth-of-type(3) i {
+  font-size: 18px;
+}
+
+
 @media (max-width: 991px) {
 
   .input-group-search .column:nth-of-type(1) {
@@ -58,6 +71,10 @@
 
   .input-group-search .column:nth-of-type(2) {
     width: 90%;
+  }
+
+  .input-group-search .column input {
+    font-size: 16px;
   }
 }
 
@@ -85,6 +102,50 @@
 .input-group-search .column select:focus {
   border: 1px solid #03a9f4;
 }
+
+/*---Nav Input Group Search Container---*/
+
+nav .input-group-search input[type=text].form-control {
+  margin-bottom: 10px;
+}
+
+nav .input-group-search .column:nth-of-type(1) i {
+  margin-left: 10px;
+}
+
+
+
+@media (min-width: 601px) {
+  nav .nav-wrapper .input-group-search i {
+    height: inherit;
+    line-height: 0;
+  }
+
+  nav .input-group-search i,
+  nav .input-group-search i.material-icons {
+    display: initial;
+    font-size: 1.8rem;
+    height: auto;
+    line-height: 0;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .global-nav__search {
+    display: none;
+  }
+}
+
+
+
+/*----------------------
+
+Search Results
+
+----------------------*/
+
+
 
 h3.results-sub-title {
   font-size: 18px;
