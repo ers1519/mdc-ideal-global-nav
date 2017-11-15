@@ -38,7 +38,14 @@ Input Group Search Container
 .input-group-search .column .btn i,
 .input-group-search .column .btn span {
   margin: auto;
+}
+
+.input-group-search .column .btn i {
   font-size: 13px;
+}
+
+.input-group-search .column .btn span {
+  font-size: 12px;
 }
 
 .input-group-search .column:nth-of-type(1) {
@@ -109,12 +116,6 @@ nav .input-group-search input[type=text].form-control {
   margin-bottom: 10px;
 }
 
-nav .input-group-search .column:nth-of-type(1) i {
-  margin-left: 10px;
-}
-
-
-
 @media (min-width: 601px) {
   nav .nav-wrapper .input-group-search i {
     height: inherit;
@@ -137,15 +138,24 @@ nav .input-group-search .column:nth-of-type(1) i {
   }
 }
 
+nav .input-group-search .column:nth-of-type(1) {
+  width: 25%;
+}
 
+
+nav .input-group-search .column:nth-of-type(2) {
+  width: 70%;
+}
+
+nav .input-group-search .column:nth-of-type(3) {
+  width: 5%;
+}
 
 /*----------------------
 
 Search Results
 
 ----------------------*/
-
-
 
 h3.results-sub-title {
   font-size: 18px;
