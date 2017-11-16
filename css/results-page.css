@@ -128,18 +128,10 @@ nav .input-group-search .column {
   line-height: normal;
 }
 
-nav .btn {
-  color: #484848;
-}
-
-.btn {
-
-  color: #484848;
+.grey.lighten-3 { 
+  color: #484848 ; 
 
 }
-
-
->>>>>>> 4e059f6f82e7c483076b343e93a84818b515a2c1
 
 @media (min-width: 601px) {
   nav .nav-wrapper .input-group-search i {
