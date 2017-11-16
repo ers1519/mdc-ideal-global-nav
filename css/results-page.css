@@ -24,6 +24,7 @@ Input Group Search Container
 .input-group-search input[type=text].form-control {
   margin-bottom: 0;
   border-radius: 0;
+  border: 1px solid #bbbbbb;	
 }
 
 .input-group-search .column .btn {
@@ -55,6 +56,9 @@ Input Group Search Container
 .input-group-search .column:nth-of-type(1) .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top: 1px solid #bbbbbb;
+  border-bottom:1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;	
 } 
 
 .input-group-search .column:nth-of-type(2) {
@@ -102,7 +106,6 @@ Input Group Search Container
 .input-group-search .column select {
   background-color: #e0e0e0;
   padding: 5px 20px;
-  border: 1px solid #9e9e9e;
   color: #616161;
 }
 
@@ -120,9 +123,23 @@ nav .input-group-search {
   padding: 10px 0;
 }
 
+
 nav .input-group-search .column {
   line-height: normal;
 }
+
+nav .btn {
+  color: #484848;
+}
+
+.btn {
+
+  color: #484848;
+
+}
+
+
+>>>>>>> 4e059f6f82e7c483076b343e93a84818b515a2c1
 
 @media (min-width: 601px) {
   nav .nav-wrapper .input-group-search i {
