@@ -116,16 +116,10 @@ nav .input-group-search .column:nth-of-type(1) i {
   margin-left: 10px;
 }
 
-nav .btn {
-  color: #484848;
-}
-
-.btn {
-
-  color: #484848;
+.grey.lighten-3 { 
+  color: #484848 ; 
 
 }
-
 
 
 @media (min-width: 601px) {
