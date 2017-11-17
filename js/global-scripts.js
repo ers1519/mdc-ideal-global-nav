@@ -18,9 +18,6 @@ function doneResizing(){
 
     $('.global-header-container').removeClass('navbar-fixed');
 
-    moveNavigationMobile();
-
-
   } else {
 
 
@@ -31,12 +28,17 @@ function doneResizing(){
 
     checkDropdown();
 
-    moveNavigationDesktop();
-
   };
 
-}
 
+  if (window.innerWidth < '1265') {
+    moveNavigationMobile();
+  } else {
+    moveNavigationDesktop();
+  };
+
+
+}
 
 
 function moveNavigationMobile() {

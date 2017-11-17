@@ -172,12 +172,6 @@ nav .input-group-search .column:nth-of-type(3) {
     margin-bottom: 1px;
   }
 
-  .input-group-search .column select,
-  .input-group-search .column input,
-  .input-group-search .column .btn {
-    height: 3.5rem;
-  }
-
   .input-group-search .column:nth-of-type(3) i {
     line-height: inherit;
   }
@@ -258,6 +252,10 @@ h3.results-sub-title {
   height: 30px;
 }
 
+.md-logo-header + img {
+  margin-bottom: 5px;
+}
+
 .md-logo-miamidade {
   vertical-align: super;
 }
@@ -276,6 +274,8 @@ h3.results-sub-title {
 .log-in-out a {
   margin-left: 20px;
 }
+
+
 
 .global-social-login ul.inline-list {
   font-size: 13px;
@@ -300,7 +300,63 @@ h3.results-sub-title {
   font-size: 14px;
 }
 
-@media (max-width: 991px) {
+@media(min-width: 1266px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+
+@media(max-width: 1265px) {
+  .md-logo-header + img {
+    display: none;
+  }
+
+  nav .input-group-search .column:nth-of-type(1) {
+    display: none;
+  }
+
+  nav .input-group-search .column:nth-of-type(2) {
+    width: 80%;
+  }
+
+  nav .input-group-search .column:nth-of-type(3) {
+    width: 20%;
+  }
+
+  .log-in-out {
+    margin-left: 10px;
+  }
+
+  .social-media > ul li:first-child {
+    display: none;
+  }
+
+  .log-in-out a {
+    margin-left: 10px;
+  }
+
+
+  .global-nav-container {
+
+    border-top: 1px solid #ccc;
+    box-shadow: inset 0px -11px 8px -10px #CCC;
+
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    z-index: 2;
+  }
+
+  .global-nav-container,
+  .global-nav-container ul { background-color: #fafafa; }
+
+  .global-nav-container .right,
+  .global-nav-container ul li  { float: none !important;}
+
+  .global-nav-container ul li a { color: #03a9f4; }
 
   /*--Global Menu--*/
   .mobile-menu-bars {
@@ -312,4 +368,38 @@ h3.results-sub-title {
     font-size: 12px;
     margin-top: 4px;
   }
+
+
+}
+
+@media (min-width: 1301px) {
+  .hide-on-1301-and-up {
+    display: none;
+  }
+}
+
+@media(max-width: 1300px) {
+  .idol-results aside.sidebar {
+    display: none;
+  }
+
+  .idol-results .mobile-filters aside.sidebar {
+    display: block;
+  }
+
+  .idol-results main > .col.offset-m1 {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .input-group-search .column select,
+  .input-group-search .column input,
+  .input-group-search .column .btn {
+    height: 3.5rem;
+  }  
+
 }

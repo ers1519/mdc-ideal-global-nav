@@ -1132,7 +1132,7 @@ MOBILE
 }
 
 /*--before the mobile menu shows--*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1266px){
 
 
   /*----------------------
@@ -1372,29 +1372,6 @@ MOBILE
   nav { position: relative; }
 
   nav .nav-wrapper { position: initial;}
-
-  .global-nav-container {
-    display: none;
-    position: absolute;
-    top: 56px;
-    left: 0;
-    width: 100%;
-    height: 550px;
-    z-index: 2;
-}
-
-  .global-nav-container {
-    border-top: 1px solid #ccc;
-    box-shadow: inset 0px -11px 8px -10px #CCC;
-  }
-
-  .global-nav-container,
-  .global-nav-container ul { background-color: #fafafa; }
-
-  .global-nav-container .right,
-  .global-nav-container ul li  { float: none !important;}
-
-  .global-nav-container ul li a { color: #03a9f4; }
 
 }
 
