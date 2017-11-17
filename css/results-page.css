@@ -189,6 +189,10 @@ nav .input-group-search .column:nth-of-type(3) {
   .global-nav__search .col:last-child {
     padding-left: 0;
   }
+	
+  .social-media a{
+    font-size: 1.4em;
+  }
 
 
 }
@@ -264,9 +268,14 @@ h3.results-sub-title {
 
 .log-in-out {
   margin-right: 0;
-  margin-left: 50px;
+  margin-left: 30px;
+  border-left: 1px #fff solid; 
+  padding-left: 10px;
 }
 
+.log-in-out a {
+  margin-left: 20px;
+}
 
 .global-social-login ul.inline-list {
   font-size: 13px;
