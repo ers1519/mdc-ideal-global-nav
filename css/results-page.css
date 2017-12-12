@@ -267,7 +267,7 @@ h3.results-sub-title {
 .log-in-out {
   margin-right: 0;
   margin-left: 30px;
-  border-left: 1px #fff solid; 
+ /* border-left: 1px #fff solid; */
   padding-left: 10px;
 }
 
