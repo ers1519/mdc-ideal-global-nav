@@ -200,7 +200,7 @@ Search Results
 h3.results-sub-title {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 
@@ -402,4 +402,23 @@ h3.results-sub-title {
     height: 3.5rem;
   }  
 
+}
+
+/* --------------------------
+featured section
+-------------------------- */
+
+
+#featured-section{
+	/*margin-top: -25px;*/
+	margin-bottom: 50px;
+}
+
+#featured-section p {
+	margin-top:5px;
+	line-height: 16px;
+}
+
+.featured-section-box {
+	float: left;
 }

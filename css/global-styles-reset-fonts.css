@@ -2,6 +2,8 @@
 GLOBAL STYLES
 -------------------------- */
 
+
+
 html {
   font-size: 62.5%;
 }
@@ -62,6 +64,15 @@ nav .button-collapse {
   float: right;
   color: #333;
 }
+
+
+
+h2.results-title {
+	font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
 
 #mobile-menu { 
   color: #333;
@@ -185,7 +196,10 @@ nav ul a, nav .brand-logo {
 
 nav ul a{
   font-size:1.5rem;
+	border-right: 1px #eee solid;
 }
+
+
 
 
 /* --- search component --- */
@@ -293,6 +307,19 @@ nav ul a{
 .search-sub-active .global-search {
 	border-color: #ccc;
 }
+
+.search-suggestion {
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding-bottom: 20px;
+}
+
+.search-suggestion a {
+	font-style: italic;
+}
+
+
+
 
 /* --- hamburger menu --- */
 
@@ -1404,3 +1431,4 @@ MOBILE
     transition: all .25s ease-out;
   }
 }
+
