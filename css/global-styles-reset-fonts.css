@@ -66,14 +66,6 @@ nav .button-collapse {
 }
 
 
-
-h2.results-title {
-	font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 14px;
-}
-
-
 #mobile-menu { 
   color: #333;
   display: flex;
@@ -307,18 +299,6 @@ nav ul a{
 .search-sub-active .global-search {
 	border-color: #ccc;
 }
-
-.search-suggestion {
-	font-weight: bold;
-	font-size: 1.5rem;
-	padding-bottom: 20px;
-}
-
-.search-suggestion a {
-	font-style: italic;
-}
-
-
 
 
 /* --- hamburger menu --- */
