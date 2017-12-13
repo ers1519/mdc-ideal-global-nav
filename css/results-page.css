@@ -441,6 +441,20 @@ h2.results-title {
 	margin-top:40px;
 }
 
+#related-search {
+	margin-top:70px;
+	margin-bottom:-15px;
+}
+
+h2.search-results-title {
+	font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+	margin-top:40px;
+	margin-bottom:-23px;
+}
+
+
 #related-search li {
 	list-style: none;
 }
