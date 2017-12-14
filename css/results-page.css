@@ -471,6 +471,7 @@ h2.search-results-title {
 	padding-bottom: 20px;
 }
 
+
 h2.filter-title {
 /*	margin-bottom: 20px;*/
 /*    padding-bottom: 12px;*/
@@ -487,5 +488,6 @@ h2.filter-title {
 	border-radius:5px!important;
 	margin-bottom: 6px!important;
     margin-right: 2px!important;
+	width: 100%!important;
 }
 
