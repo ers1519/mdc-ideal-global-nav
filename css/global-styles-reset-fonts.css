@@ -2,6 +2,8 @@
 GLOBAL STYLES
 -------------------------- */
 
+
+
 html {
   font-size: 62.5%;
 }
@@ -63,6 +65,7 @@ nav .button-collapse {
   color: #333;
 }
 
+
 #mobile-menu { 
   color: #333;
   display: flex;
@@ -117,7 +120,7 @@ HEADER / LOG IN OUT / SOCIAL MEDIA
 }
 
 .global-social-login {
-	background-color: #03a9f4;
+	background-color: #027abb;
 	color: #fff;
 	padding: 10px 0;
   line-height: 20px;
@@ -182,6 +185,14 @@ nav ul a, nav .brand-logo {
 .social-login-container, nav ul a {
   font-size: 1.3rem;
 }
+
+nav ul a{
+  font-size:1.5rem;
+	border-right: 1px #eee solid;
+}
+
+
+
 
 /* --- search component --- */
 
@@ -288,6 +299,7 @@ nav ul a, nav .brand-logo {
 .search-sub-active .global-search {
 	border-color: #ccc;
 }
+
 
 /* --- hamburger menu --- */
 
@@ -1067,7 +1079,7 @@ FOOTER
 -------------------------- */
 
 .site-footer-container {
-  background-color: #0288d1;
+  background-color: #027abb;
   color: #fff;
   font-size: 1.3rem;
 }
@@ -1399,3 +1411,4 @@ MOBILE
     transition: all .25s ease-out;
   }
 }
+
