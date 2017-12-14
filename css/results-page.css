@@ -337,7 +337,6 @@ h3.results-sub-title {
 
 
   .global-nav-container {
-
     border-top: 1px solid #ccc;
     box-shadow: inset 0px -11px 8px -10px #CCC;
 
@@ -349,6 +348,10 @@ h3.results-sub-title {
     height: 550px;
     z-index: 2;
   }
+	
+	.global-nav-container {
+	border-left:1px #eee solid;	
+	}
 
   .global-nav-container,
   .global-nav-container ul { background-color: #fafafa; }
@@ -462,5 +465,27 @@ h2.search-results-title {
 #related-search a {
 	font-size: 16px;
 	line-height: 30px;
+}
+
+.filter-selections {
+	padding-bottom: 20px;
+}
+
+h2.filter-title {
+/*	margin-bottom: 20px;*/
+/*    padding-bottom: 12px;*/
+	margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.chip {
+	padding: 0 9px!important;
+	border-radius:5px!important;
+	margin-bottom: 6px!important;
+    margin-right: 2px!important;
 }
 
