@@ -491,3 +491,7 @@ h2.filter-title {
 	width: 100%!important;
 }
 
+.general-page__title {
+    border-bottom: 5px solid #027abb!important;
+}
+

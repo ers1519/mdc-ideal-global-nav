@@ -12,7 +12,7 @@ body {
   font-size: 1.6rem;
 }
 
-a {color: #03a9f4}
+a {color: #027abb}
 
 a:hover {text-decoration: underline}
 
@@ -189,6 +189,10 @@ nav ul a, nav .brand-logo {
 nav ul a{
   font-size:1.5rem;
 	border-right: 1px #eee solid;
+}
+
+nav ul li:first-child a {
+	border-left: 1px #eee solid;
 }
 
 site-nav-content {
