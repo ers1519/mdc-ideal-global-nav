@@ -481,6 +481,7 @@ h2.filter-title {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+	float:left;
 }
 
 .chip {
