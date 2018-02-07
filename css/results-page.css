@@ -424,7 +424,7 @@ ACCORDION
 
 .accordion-filters .accordion-content {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   max-height: 2000px;
   opacity: 1;
   transform: translate(0, 0);
