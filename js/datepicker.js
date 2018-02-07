@@ -335,7 +335,7 @@
 		this.$label = this.$target.parents().find("label[for=" + this.id + "]");
 		this.$group = this.$target.parent('.input-group');
 		this.$target.attr('aria-autocomplete', 'none')
-		this.$target.css('min-width', '70%')
+		this.$target.css('min-width', '80%')
 		this.$target.addClass('form-control');
 
 		if (! this.$target.attr('placeholder')) {

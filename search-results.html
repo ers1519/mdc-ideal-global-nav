@@ -624,176 +624,210 @@
 					<div class="row idol-results">
 
 						<div class="col s12 m3">
-							<!--Sidebar-->
-							<aside class="sidebar hide-on-small-only">
+								<!--Mobile Filters-->
+								<div class="mobile-filters">
+									<div class="mobile-filters-container">
 
-								<!--Selected Filters-->
-								<section class="widget" aria-labelledby="selectedFilters">									 		
-									<div class="row margin-bottom-0">
-										<div class="col s12 m8 left-align">
-												<h2 class="filter-title" id="selectedFilters">Selected Filters</h2>
+										<!--Top Container-->
+										<div class="top-menu-container">
+											<div class="column left-align">
+												<button id="mobile-close" tabindex="0">
+													<svg viewBox="0 0 12 12" role="img" aria-label="Close" focusable="false" style="height: 15px; width: 15px; display: block; fill: rgb(72, 72, 72);"><path fill-rule="evenodd" d="M11.5 10.5c.3.3.3.8 0 1.1-.3.3-.8.3-1.1 0L6 7.1l-4.5 4.5c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1L4.9 6 .5 1.5C.2 1.2.2.7.5.4c.3-.3.8-.3 1.1 0L6 4.9 10.5.4c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1L7.1 6l4.4 4.5z"></path></svg>
+												</button>
+											</div>
+											<div class="column center-align">
+												<span>Filters</span>
+											</div>
+											<div class="column right-align">
+												<button id="reset-filters" tabindex="0"><span>Reset</span></button>
+											</div>
 										</div>
-										<div class="col s12 m4 right-align">
-												<a href="#">Reset</a>
+
+										<!--Middle Container/Results -->
+										<div class="middle-container">
+											<div class="middle-body">
+
+												<!--Sidebar-->
+												<aside class="sidebar">
+
+													<!--Selected Filters-->
+													<section class="widget" aria-labelledby="selectedFilters">									 		
+														<div class="row margin-bottom-0">
+															<div class="col s12 m8 left-align">
+																	<h2 class="filter-title" id="selectedFilters">Selected Filters</h2>
+															</div>
+															<div class="col s12 m4 right-align">
+																	<a href="#">Reset</a>
+															</div>
+														</div>
+
+														<div class="chip">
+															Online Service
+															<i class="close material-icons">close</i>
+														</div>
+
+														<div class="chip">
+															Public Safety
+															<i class="close material-icons">close</i>
+														</div>
+
+														<div class="chip">
+															Make Payments
+															<i class="close material-icons">close</i>
+														</div>
+
+														<div class="chip">
+															Port Miami
+															<i class="close material-icons">close</i>
+														</div>
+													</section>
+
+
+													<!--Start and End Date-->
+													<section class="widget" aria-labelledby="dateRange">
+
+														<ul class="accordion-filters">
+															<li>									
+																<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
+																<i aria-hidden="true"></i>
+
+																<h3 class="widget-title" id="dateRange">Date Range</h3>
+																
+																<div class="accordion-content">
+
+																	<div class="form-group">
+																			<label id="date_label_start" for="startDate">Start Date</label>
+																			<div class="input-group">
+																				<input class="date browser-default form-control no-rounded-edges-right" id="startDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
+																			</div>
+																	</div>
+
+																	<div class="form-group">
+																			<label id="date_label_end" for="endDate">End Date</label>
+																			<div class="input-group">
+																				<input class="date browser-default form-control no-rounded-edges-right" id="endDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
+																			</div>
+																	</div>
+
+																	<a href="#" class="waves-effect waves-light btn blue">Apply Changes</a>
+
+																</div>
+															</li>
+														</ul>						
+
+													</section>
+
+
+
+												
+													<!--Filter by type-->
+													<section class="widget" aria-labelledby="filterType">
+
+														<ul class="accordion-filters">
+															<li>									
+																<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
+																<i aria-hidden="true"></i>
+
+																<h3 class="widget-title" id="filterType">Filter by Type</h3>
+																
+																<div class="accordion-content">
+																	<fieldset>
+																		<legend>Choose a type to filter by:</legend>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle01" />
+																      <label for="typeTitle01">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle02" />
+																      <label for="typeTitle02">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle03" />
+																      <label for="typeTitle03">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle04" />
+																      <label for="typeTitle04">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle05" />
+																      <label for="typeTitle05">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle06" />
+																      <label for="typeTitle06">Title</label>
+																    </p>
+																    <p>
+																		  <input type="checkbox" class="filled-in" id="typeTitle07" />
+																      <label for="typeTitle07">Title</label>
+																    </p>
+																	</fieldset>
+																</div>
+															</li>
+														</ul>						
+											
+													</section>
+
+													<!--Filter by department-->
+													<section class="widget" aria-labelledby="filterDepartment">
+
+														<ul class="accordion-filters">
+															<li>									
+																<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
+																<i aria-hidden="true"></i>
+
+																<h3 class="widget-title" id="filterDepartment">Filter by Department</h3>
+
+																<div class="accordion-content">
+																	<fieldset>
+																		<legend>Choose a department to filter by:</legend>
+																		<p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle01" />
+																      <label for="departmentTitle01">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle02" />
+																      <label for="departmentTitle02">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle03" />
+																      <label for="departmentTitle03">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle04" />
+																      <label for="departmentTitle04">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle05" />
+																      <label for="departmentTitle05">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle06" />
+																      <label for="departmentTitle06">Title</label>
+																    </p>
+																    <p>
+																	  <input type="checkbox" class="filled-in" id="departmentTitle07" />
+																      <label for="departmentTitle07">Title</label>
+																    </p>
+																	</fieldset>
+																</div>
+															</li>
+														</ul>				
+
+													</section>
+												</aside>
+
+											</div>
 										</div>
+
+										<!--Bottom Container-->
+										<div class="bottom-menu-container">
+											<button id="see-results">See results</button>
+										</div>
+
 									</div>
-
-									<div class="chip">
-										Online Service
-										<i class="close material-icons">close</i>
-									</div>
-
-									<div class="chip">
-										Public Safety
-										<i class="close material-icons">close</i>
-									</div>
-
-									<div class="chip">
-										Make Payments
-										<i class="close material-icons">close</i>
-									</div>
-
-									<div class="chip">
-										Port Miami
-										<i class="close material-icons">close</i>
-									</div>
-								</section>
-
-
-								<!--Start and End Date-->
-								<section class="widget" aria-labelledby="dateRange">
-
-									<ul class="accordion-filters">
-										<li>									
-											<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
-											<i aria-hidden="true"></i>
-
-											<h3 class="widget-title" id="dateRange">Date Range</h3>
-											
-											<div class="accordion-content">
-
-												<div class="form-group">
-														<label id="date_label_start" for="startDate">Start Date</label>
-														<div class="input-group">
-															<input class="date browser-default form-control no-rounded-edges-right" id="startDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
-														</div>
-												</div>
-
-												<div class="form-group">
-														<label id="date_label_end" for="endDate">End Date</label>
-														<div class="input-group">
-															<input class="date browser-default form-control no-rounded-edges-right" id="endDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
-														</div>
-												</div>
-
-												<a href="#" class="waves-effect waves-light btn blue">Apply Changes</a>
-
-											</div>
-										</li>
-									</ul>						
-
-								</section>
-
-
-
-							
-								<!--Filter by type-->
-								<section class="widget" aria-labelledby="filterType">
-
-									<ul class="accordion-filters">
-										<li>									
-											<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
-											<i aria-hidden="true"></i>
-
-											<h3 class="widget-title" id="filterType">Filter by Type</h3>
-											
-											<div class="accordion-content">
-												<fieldset>
-													<legend>Choose a type to filter by:</legend>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle01" />
-											      <label for="typeTitle01">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle02" />
-											      <label for="typeTitle02">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle03" />
-											      <label for="typeTitle03">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle04" />
-											      <label for="typeTitle04">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle05" />
-											      <label for="typeTitle05">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle06" />
-											      <label for="typeTitle06">Title</label>
-											    </p>
-											    <p>
-													  <input type="checkbox" class="filled-in" id="typeTitle07" />
-											      <label for="typeTitle07">Title</label>
-											    </p>
-												</fieldset>
-											</div>
-										</li>
-									</ul>						
-						
-								</section>
-
-								<!--Filter by department-->
-								<section class="widget" aria-labelledby="filterDepartment">
-
-									<ul class="accordion-filters">
-										<li>									
-											<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
-											<i aria-hidden="true"></i>
-
-											<h3 class="widget-title" id="filterDepartment">Filter by Department</h3>
-
-											<div class="accordion-content">
-												<fieldset>
-													<legend>Choose a department to filter by:</legend>
-													<p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle01" />
-											      <label for="departmentTitle01">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle02" />
-											      <label for="departmentTitle02">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle03" />
-											      <label for="departmentTitle03">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle04" />
-											      <label for="departmentTitle04">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle05" />
-											      <label for="departmentTitle05">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle06" />
-											      <label for="departmentTitle06">Title</label>
-											    </p>
-											    <p>
-												  <input type="checkbox" class="filled-in" id="departmentTitle07" />
-											      <label for="departmentTitle07">Title</label>
-											    </p>
-												</fieldset>
-											</div>
-										</li>
-									</ul>				
-
-								</section>
-								
-							</aside>
+								</div>
+								<!--/Mobile Filters-->
 						</div>
 
 						<main>
@@ -1006,7 +1040,7 @@
 
 
 								<!--Mobile Filters-->
-								<div class="mobile-filters hide-on-1301-and-up">
+								<div class="mobile-filters hide-on-1301-and-up" style="display: none!important;">
 									<div class="mobile-filters-container">
 
 										<!--Top Container-->
@@ -1028,129 +1062,7 @@
 										<div class="middle-container">
 											<div class="middle-body">
 
-												<aside class="sidebar">
-													
-														<div class="column center-align">
-												<span>Filters</span>
-											</div>
-													
-													<div class="row">
-						 		   <div class="col s12 m12">
-								   <div>
-						 			<h2 class="filter-title"> Selected Filters</h2>	
-						 	
-									</div>
-									
-									 <div class="chip">
-										Online Service
-										<i class="close material-icons">close</i>
-									  </div>
-									  
-									  <div class="chip">
-										Public Safety
-										<i class="close material-icons">close</i>
-									  </div>
-									  
-									  <div class="chip">
-										Make Payments
-										<i class="close material-icons">close</i>
-									  </div>
-									  
-									  <div class="chip">
-										Port Miami
-										<i class="close material-icons">close</i>
-									  </div>
-				</div>					  
-	
-								</div>
 
-
-
-
-													<!--Filter by type-->
-													<section class="widget" aria-labelledby="mobileFilterType">
-														<h3 class="widget-title" id="mobileFilterType">Filter by Type</h3>
-
-														<form action="#">
-															<p>
-																<input type="checkbox" id="type-item-01" />
-																<label for="type-item-01">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-02" />
-																<label for="type-item-02">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-03" />
-																<label for="type-item-03">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-04" />
-																<label for="type-item-04">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-05" />
-																<label for="type-item-05">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-06" />
-																<label for="type-item-06">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-07" />
-																<label for="type-item-07">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="type-item-08" />
-																<label for="type-item-08">Title <span class="text-muted">(200)</span> </label>
-															</p>
-														</form>
-													</section>
-
-														<!--Filter by department-->
-														<section class="widget">
-															<h3 class="widget-title">Filter by Department</h3>
-
-														<form action="#">
-															<p>
-																<input type="checkbox" id="department-item-01" />
-																<label for="department-item-01">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-02" />
-																<label for="department-item-02">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-03" />
-																<label for="department-item-03">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-04" />
-																<label for="department-item-04">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-05" />
-																<label for="department-item-05">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-06" />
-																<label for="department-item-06">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-07" />
-																<label for="department-item-07">Title <span class="text-muted">(200)</span> </label>
-															</p>
-															<p>
-																<input type="checkbox" id="department-item-08" />
-																<label for="department-item-08">Title <span class="text-muted">(200)</span> </label>
-															</p>
-														</form>
-
-														
-														
-													</section>
-													
-												</aside>
 
 											</div>
 										</div>

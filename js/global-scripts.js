@@ -128,53 +128,6 @@ $(document).ready(function() {
   });
 
 
-if($('.calendar-start').length) {
-
- $('.calendar-start').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    onOpen: onOpenMobile,
-    onClose: onCloseMobile,
-    closeOnSelect: true // Close upon selecting a date,
-  })
-
-}
-
-if($('.calendar-start').length) {
-
- $('.calendar-end').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    onOpen: onOpenMobile,
-    onClose: onCloseMobile,
-    closeOnSelect: true // Close upon selecting a date,
-  });
-
-}
-
-  $('.calendar-title-container').next().hide().prev().on('click', function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass('active');
-
-    //For ADA Compliance
-    var expanded = $(this).next().attr('aria-expanded')
-
-    if(expanded == 'true') {
-      expanded = 'false'
-    } else {
-      expanded  = 'true'
-    };
-
-    $(this).next().attr('aria-expanded', expanded);
-
-  });
-
   $('.mobile-fixed button').on('click', function (e) {
     $('.mobile-filters').addClass('active');
     e.preventDefault();

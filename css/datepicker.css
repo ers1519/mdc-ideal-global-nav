@@ -33,6 +33,16 @@ a.datepicker-button {
     border-right-width: 0;
 }
 
+@media (max-width: 1750px) and (min-width: 1301px) {
+
+	.date.browser-default.form-control {
+		min-width: 70%;
+	}
+
+}
+
+
+
 
 div.datepicker-calendar {
 	margin: 0 10px 10px 0;
