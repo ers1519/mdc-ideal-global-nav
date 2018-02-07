@@ -17,8 +17,9 @@
 		<link rel="stylesheet" href="css/results-page.css">
 		<link rel="stylesheet" href="css/floating-bar.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body> 
 		<div id="main-container">
 
 			<!--Orginial Header-->
@@ -659,7 +660,22 @@
 								</section>	  									  
 
 							
-							
+<script>
+
+	$(function () {
+		$("#ribad").on('click', function (e) {
+
+			$('.show5locations').toggleClass('show5locations2');
+
+			var newText = $(this).text() == "Show 5 Locations" ? "Show All Locations" : "Show 5 Locations";
+			 $(this).text(newText);
+
+			 e.preventDefault();
+
+		});
+	});
+
+</script>
 							
 								<!--Filter by type-->
 								<section class="widget" aria-labelledby="filterType">
@@ -667,35 +683,37 @@
 
 									<fieldset>
 										<legend>Choose a type to filter by:</legend>
-								    <p>
+								     <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle01" />
 								      <label for="typeTitle01">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle02" />
 								      <label for="typeTitle02">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle03" />
 								      <label for="typeTitle03">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle04" />
 								      <label for="typeTitle04">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle05" />
 								      <label for="typeTitle05">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle06" />
 								      <label for="typeTitle06">Title</label>
 								    </p>
-								    <p>
+								    <p class="show5locations">
 										  <input type="checkbox" class="filled-in" id="typeTitle07" />
 								      <label for="typeTitle07">Title</label>
 								    </p>
 									</fieldset>
+									
+									<a id="ribad" href="#" style="margin: -30px 1px 0 0" class="waves-effect waves-light btn alt-blue">Show All Locations</a>
 
 								</section>
 
@@ -705,31 +723,31 @@
 
 									<fieldset>
 										<legend>Choose a department to filter by:</legend>
-										<p>
+										 <p><p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle01" />
 								      <label for="departmentTitle01">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle02" />
 								      <label for="departmentTitle02">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle03" />
 								      <label for="departmentTitle03">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle04" />
 								      <label for="departmentTitle04">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle05" />
 								      <label for="departmentTitle05">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle06" />
 								      <label for="departmentTitle06">Title</label>
 								    </p>
-								    <p>
+								     <p>
 									  <input type="checkbox" class="filled-in" id="departmentTitle07" />
 								      <label for="departmentTitle07">Title</label>
 								    </p>
