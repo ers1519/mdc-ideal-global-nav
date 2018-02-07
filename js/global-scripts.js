@@ -119,6 +119,14 @@ function onCloseMobile()
 
 $(document).ready(function() {
 
+  $('#startDate').datepicker({
+    next: '#endDate'
+  });
+
+  $('#endDate').datepicker({
+    next: '#startDate'
+  });
+
 
 if($('.calendar-start').length) {
 

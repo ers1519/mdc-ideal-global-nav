@@ -553,6 +553,16 @@ KEYFRAMES
 
 
 /* --------------------------
+Start and End
+-------------------------- */
+
+.form-group { position: relative; }
+
+.input-group input {
+  width: auto;
+}
+
+/* --------------------------
 featured section
 -------------------------- */
 

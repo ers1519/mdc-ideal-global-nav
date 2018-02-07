@@ -11,6 +11,7 @@
     <!--link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
 		<!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/datepicker.css">
 		<link rel="stylesheet" href="css/global-styles-reset-fonts.css">
 		<link rel="stylesheet" href="css/calendar-list.css">
 		<link rel="stylesheet" href="css/mobile-global.css">
@@ -656,7 +657,45 @@
 										Port Miami
 										<i class="close material-icons">close</i>
 									</div>
-								</section>	  									  							
+								</section>
+
+
+								<!--Start and End Date-->
+								<section class="widget" aria-labelledby="dateRange">
+
+									<ul class="accordion-filters">
+										<li>									
+											<input type="checkbox" aria-label="Toggles the Filter by Title section once its unchecked" checked/>
+											<i aria-hidden="true"></i>
+
+											<h3 class="widget-title" id="dateRange">Date Range</h3>
+											
+											<div class="accordion-content">
+
+												<div class="form-group">
+														<label id="date_label_start" for="startDate">Start Date</label>
+														<div class="input-group">
+															<input class="date browser-default form-control no-rounded-edges-right" id="startDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
+														</div>
+												</div>
+
+												<div class="form-group">
+														<label id="date_label_end" for="endDate">End Date</label>
+														<div class="input-group">
+															<input class="date browser-default form-control no-rounded-edges-right" id="endDate" type="text" placeholder="M/D/YY" title="format: M/D/YY"/>
+														</div>
+												</div>
+
+												<a href="#" class="waves-effect waves-light btn blue">Apply Changes</a>
+
+											</div>
+										</li>
+									</ul>						
+
+								</section>
+
+
+
 							
 								<!--Filter by type-->
 								<section class="widget" aria-labelledby="filterType">
@@ -703,7 +742,7 @@
 											</div>
 										</li>
 									</ul>						
-
+						
 								</section>
 
 								<!--Filter by department-->
@@ -1023,7 +1062,10 @@
 									  </div>
 				</div>					  
 	
-								</div>		  
+								</div>
+
+
+
 
 													<!--Filter by type-->
 													<section class="widget" aria-labelledby="mobileFilterType">
@@ -1249,8 +1291,7 @@
 		</div>
 	</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<!--script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
-	<!--script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script-->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
 	<script src="js/global-scripts.js"></script>
 </html>
