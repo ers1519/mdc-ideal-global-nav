@@ -124,7 +124,7 @@ $(document).ready(function() {
   });
 
   $('#endDate').datepicker({
-    next: '#startDate'
+    previous: '#startDate'
   });
 
 
