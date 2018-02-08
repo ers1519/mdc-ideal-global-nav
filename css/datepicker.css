@@ -36,7 +36,8 @@ a.datepicker-button {
 @media (max-width: 1750px) and (min-width: 1301px) {
 
 	.date.browser-default.form-control {
-		min-width: 70%;
+		min-width: auto !important;
+		width: 150px;
 	}
 
 }

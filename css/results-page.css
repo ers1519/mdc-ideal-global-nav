@@ -808,6 +808,7 @@ MOBILE FILTERS
   .mobile-filters-container {
     background-color: transparent;
     border-top: none;
+    box-shadow: none;
   }
 
   .mobile-filters {
@@ -837,6 +838,10 @@ MOBILE FILTERS
 
   .sidebar {
     overflow: hidden;
+  }
+
+  .mobile-filters, .mobile-filters-container, .middle-container, .sidebar {
+    overflow: visible;
   }
 
 }
