@@ -1,3 +1,6 @@
+
+@import url('mega-dropdown.css');
+
 /* --------------------------
 GLOBAL STYLES
 -------------------------- */
@@ -186,21 +189,13 @@ nav ul a, nav .brand-logo {
   font-size: 1.3rem;
 }
 
-nav ul a{
-  font-size:1.5rem;
-	border-right: 1px #eee solid;
+.site-nav-content > li > a {
+  border-right: 1px solid #eee;
 }
 
-nav ul li:first-child a {
-	border-left: 1px #eee solid;
+.site-nav-content > li:first-child > a {
+  border-left: 1px solid #eee;
 }
-
-site-nav-content {
-	boder-left:1px #eee solid;
-	
-}
-
-
 
 
 /* --- search component --- */
@@ -389,91 +384,6 @@ site-nav-content {
   left: 50%;
 }
 
-
-
-/
-
-/*START OF MEGA */
-
-
-.mega-container > ul{
-  position: absolute;
-  top: 101%;
-  left: 0;
-  padding: 10px 20px;
-  background: #fff;
-  max-height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  z-index: 4000;
-  width: 100%;
-
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: #E2E6E7;
-
-  -webkit-transition: max-height 0.4s ease-in-out;
-  -moz-transition: max-height 0.4s ease-in-out;
-  transition: max-height 0.4s ease-in-out;
-
-    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.09);
-    -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.09);
-    box-shadow: 0 2px 3px rgba(0,0,0,0.09);
-}
-
-.mega-container > ul > li{
-  width: calc(100%/3 - 17px);
-  float: left !important;
-  border-right: 1px solid #E2E6E7;
-  margin: 15px 25px 15px 0;
-  padding: 0 10px;
-}
-
-.mega-container > ul > li:last-child{
-  border: 0;
-  margin-right: 0;
-}
-
-.mega-container > ul > li > a{
-  font-size: 1.5em;
-  color: #616161;
-  padding-left: 0;
-}
-
-.mega-container > ul > li > ul{
-  padding-left: 0;
-}
-
-.mega-container > ul > li > ul > li{
-  display: block;
-}
-
-.mega-container > ul > li > ul a, .flexMenu-viewMore > ul > li > a{
-  line-height: 180%;
-  padding: 10px 15px;
-  font-size: 1em;
-  border-radius: 3px;
-  text-transform: none;
-
-  color: #616161;
-}
-
-.mega-container > ul > li > ul > li a:hover, .flexMenu-viewMore > ul > li > a:hover{
-  background: #eee;
-}
-
-.mega-image a{
-  width: 348px;
-  height: 245px;
-  overflow: hidden;
-  padding: 0 !important;
-}
-
-.mega-image img{
-  min-width: 348px;
-  width: 100%;
-  height: auto;
-}
 
 /*-------Mobile Navigation-------*/
 
@@ -1163,16 +1073,6 @@ MOBILE
   ----------------------*/
 
   /* START OF DROPDOWN */
-  .site-nav-content > li ul li {
-    float: none;
-  }
-
-  .site-nav-content > li > ul > li > a:before {
-    content: "\f105";
-    font-family: 'FontAwesome';
-    font-size: 1.3rem;
-    float: right;
-  }
 
   .mega-container ul li ul li:first-child select { margin: 0; }
 
@@ -1325,8 +1225,6 @@ MOBILE
   .flexMenu-viewMore ul li:hover > ul{
     visibility: hidden;
   }
-
-  .site-nav-content li:hover > a { color: #03a9f4;}
 
   .site-nav-content li:hover > ul{
     max-height: 600px !important;

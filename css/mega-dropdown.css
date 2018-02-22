@@ -1,0 +1,191 @@
+
+/*--styles to override--*/
+
+/*-- DELETE--
+
+nav ul li:first-child a {
+	border-left: 1px #eee solid;
+}
+
+
+nav ul a{
+  font-size:1.5rem;
+	border-right: 1px #eee solid;
+}
+
+
+@media only screen and (min-width: 1266px){
+
+	.site-nav-content > li > ul > li > a:before {
+	  content: "\f105";
+	  font-family: 'FontAwesome';
+	  font-size: 1.3rem;
+	  float: right;
+	}
+
+	.site-nav-content li:hover > a { color: #03a9f4;}
+
+
+  .site-nav-content > li ul li {
+    float: none;
+  }
+
+}
+
+--/DELETE--*/
+
+
+.dropdown ul li:first-child a {
+	border-left: 1px #eee solid;
+}
+
+.dropdown ul a {
+	font-size: 15px;
+	border-right: 1px #eee solid;
+}
+
+@media only screen and (min-width: 1266px){
+
+	.dropdown > ul > li > a:before {
+	  content: "\f105";
+	  font-family: 'FontAwesome';
+	  font-size: 13px;
+	  float: right;
+	}
+
+	.dropdown:hover > a,
+	.mega-container:hover > a { color: #03a9f4;}
+
+  .dropdown ul li {
+    float: none;
+  }
+
+
+}
+
+/*--styles to override--*/
+
+
+
+/*START OF MEGA */
+
+.site-nav-content .btn {
+	transition: background-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.mega-container a:hover {
+	color: #03a9f4;
+}
+
+.mega-container > ul {
+	position: absolute;
+	top: 101%;
+	left: 0;
+	padding: 10px 20px;
+	background: #fff;
+	max-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 4000;
+	width: 100%;
+
+	display: flex !important;
+	flex-wrap: wrap;
+
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #E2E6E7;
+
+	-webkit-transition: max-height 0.4s ease-in-out;
+	-moz-transition: max-height 0.4s ease-in-out;
+	transition: max-height 0.4s ease-in-out;
+}
+
+.mega-container-child {
+	flex: 0 0 395px;
+
+	border-right: 1px solid #E2E6E7;
+	margin: 15px 25px 15px 0;
+	padding: 0 10px;
+}
+
+.mega-container-child h3 {
+	font-weight: bold;
+	color: #616161;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.mega-container-child h3 a {
+	font-size: 16px;
+}
+
+.mega-container-child > ul {
+	padding-left: 0;
+}
+
+.mega-container-child > ul > li {
+	display: block;
+	float: none;
+}
+
+.mega-container-child > ul a {
+	line-height: 180%;
+	padding: 10px 15px;
+	font-size: 12px;
+	border-radius: 3px;
+	text-transform: none;
+
+	color: #616161;
+}
+
+.mega-container-child > ul > li a:hover {
+	background: #F5F5F5;
+}
+
+.mega-container-child--two-third {
+	flex: 0 0 65%;
+}
+
+.mega-container-child--two-third > ul {
+	display: flex !important;
+	flex-wrap: wrap;
+}
+
+.mega-container-child--two-third > ul > li {
+	flex: 0 0 33%;
+}
+
+.mega-container-child--last {
+	border: 0;
+	margin-right: 0;
+}
+
+
+
+.mega-container-image,
+.mega-container-image a {
+	padding: 0;
+}
+
+.mega-container-image a {
+	line-height: initial;
+}
+
+.mega-container-image img{
+	/*min-width: 348px;*/
+	width: 100%;
+	height: auto;
+}
+
+.mega-container-button {
+	width: 100%;
+}
+
+.mega-container-button .btn {
+	margin: 0;
+}
+
+.mega-container-button .btn:hover {
+	color: #fff;
+}
