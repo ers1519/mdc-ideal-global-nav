@@ -281,16 +281,12 @@ a.alt-blue:hover{
 
 .log-in-out {
   margin-right: 0;
-  margin-left: 30px;
- /* border-left: 1px #fff solid; */
   padding-left: 10px;
 }
 
 .log-in-out a {
   margin-left: 20px;
 }
-
-
 
 .global-social-login ul.inline-list {
   font-size: 13px;
@@ -315,10 +311,71 @@ a.alt-blue:hover{
   font-size: 14px;
 }
 
+/*--Global Navigation Mobile --*/
+
+.global-nav__mobile {
+  height: auto;
+  line-height: normal;
+}
+
+.global-nav__mobile-container {
+  display: flex;
+  color: #333;
+  font-size: 12px;
+}
+
+@media (min-width: 601px) {
+  .global-nav__mobile-container {
+    height: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .global-nav__mobile-container {
+    height: 56px;
+  }
+}
+
+.global-nav__mobile-container a {
+  color: #027abb;
+}
+
+.global-nav__mobile-child {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.global-nav__mobile-child:first-child {
+  justify-content: flex-start;
+}
+
+.global-nav__mobile-child:nth-of-type(2) {
+  flex-grow: 2;
+}
+
+.md-logo-header-mobile {
+  height: 40px;
+}
+
+
+
+/*--/Global Navigation Mobile --*/
+
 @media(min-width: 1266px) {
   #mobile-menu {
     display: none;
   }
+
+  .show-above-1265-only {
+    display: block;
+  }
+
+  .show-below-1266-only {
+    display: none;
+  }
+
 }
 
 @media(max-width: 1265px) {
@@ -350,6 +407,13 @@ a.alt-blue:hover{
     margin-left: 10px;
   }
 
+  .show-above-1265-only {
+    display: none;
+  }
+
+  .show-below-1266-only {
+    display: block;
+  }
 
   .global-nav-container {
     border-top: 1px solid #ccc;
@@ -375,17 +439,6 @@ a.alt-blue:hover{
   .global-nav-container ul li  { float: none !important;}
 
   .global-nav-container ul li a { color: #03a9f4; }
-
-  /*--Global Menu--*/
-  .mobile-menu-bars {
-    margin-top: 10px;
-    margin-left: 0;
-  }
-
-  .mobile-menu-bars div {
-    font-size: 12px;
-    margin-top: 4px;
-  }
 
 
 }
@@ -584,7 +637,7 @@ MOBILE FILTERS
   transition-duration: 250ms;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  z-index: 8;
+  z-index: 2;
 }
 
 .mobile-fixed button {

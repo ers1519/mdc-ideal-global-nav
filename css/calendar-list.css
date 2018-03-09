@@ -391,11 +391,6 @@ CALENDAR ITEM
 MEDIA BREAKPOINTS
 -------------------------- */
 
-/*--Breakpoint whe menu shows --*/
-@media (min-width: 992px){
-  .margin-top-8x { margin-top: 128px !important; }
-}
-
 /*--Everything not mobile--*/
 @media (min-width: 601px) {
 
@@ -426,10 +421,6 @@ MEDIA BREAKPOINTS
   .calendar-title-container > .column:last-child {
     text-align: right;
     padding-right: 100px;
-  }
-
-  .general-page__title {
-    margin: 30px 0;
   }
 }
 

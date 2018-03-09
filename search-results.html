@@ -18,7 +18,83 @@
 		<link rel="stylesheet" href="css/results-page.css">
 		<link rel="stylesheet" href="css/floating-bar.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+		<style>
+
+			/*--Font Awesome Custom Classes--*/
+			.fa-mdc-online-service::before {
+				content: "\f108";
+			}
+
+			.fa-mdc-make-payment::before {
+				content: "\f155";
+			}
+
+			.fa-mdc-report-problem::before {
+				content: "\f075";
+			}
+
+			/*--/Font Awesome Custom Classes--*/
+
+		</style>
+
+		<!--Auto Complete-->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<style>
+			.ui-widget {
+				font-size: 13px;
+			}
+
+			.ui-widget.ui-widget-content {
+		    border-width: 0 1px 1px 1px;
+		    border-style: solid;
+		    border-color: #c5c5c5;
+
+    		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+			}
+
+			.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+				background: #027abb;
+				border: 1px solid transparent;
+			}
+
+		</style>
+
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		  $( function() {
+		    var availableTags = [
+		      "ActionScript",
+		      "AppleScript",
+		      "Asp",
+		      "BASIC",
+		      "C",
+		      "C++",
+		      "Clojure",
+		      "COBOL",
+		      "ColdFusion",
+		      "Erlang",
+		      "Fortran",
+		      "Groovy",
+		      "Haskell",
+		      "Java",
+		      "JavaScript",
+		      "Lisp",
+		      "Perl",
+		      "PHP",
+		      "Python",
+		      "Ruby",
+		      "Scala",
+		      "Scheme"
+		    ];
+		    $( ".auto-complete" ).autocomplete({
+		      source: availableTags
+		    });
+		  } );
+  	</script>
+  	<!--/Auto Complete-->
 	</head>
 	<body> 
 		<div id="main-container">
@@ -29,7 +105,7 @@
 
 					<div class="global-social-login">
 
-						<div class="container">
+						<div class="container show-above-1265-only">
 							<div class="row">
 
 								<div class="col s4 m6 l7">
@@ -37,8 +113,8 @@
 										<div class="column">
 											<img alt="Miami-Dade County Logo" class="md-logo-header" src="images/md-logo.png">
 										</div>
-										<div class="column hide-on-med-and-down">
-											<ul class="inline-list ">
+										<div class="column">
+											<ul class="inline-list">
 												<li><a href="#">Services</a></li>
 												<li><a href="#">News</a></li>
 												<li><a href="#">Calendar</a></li>
@@ -54,25 +130,31 @@
 
 									<div class="social-login-container right-align">
 
-										<!--Social Media-->
-									
-<!--
-											<div class="social-media">
-											<ul>
-					              <li><span class="hide-on-med-and-down">Follow:</span></li>
-					              <li><a class="facebook-square" target="_blank" href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
-					              <li><a class="twitter" target="_blank" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					              <li><a class="instagram" target="_blank" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-					              <li><a class="youtube" target="_blank" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-					            </ul>
-										</div>
--->
-										<!--/Social Media-->
+
+										<ul class="inline-list">
+											<li id="global-icon-search">
+											  <a href="#">
+											  	<div class="icon-circle search-circle">
+											    	<div class="fa fa-search fa-inverse search-spy"></div>
+											    	<div class="fa fa-times fa-inverse search-x"></div>
+											    </div>
+											    <div class="icon-text-below hide-on-med-and-up">Search</div>
+											  </a>
+										    <div class="global-search-container">
+										      <div class="global-search">
+										        <input name="" placeholder="Search Miami-Dade County" id="search-query" title="Miami-Dade Search" class="search-text" type="text">
+										        <span id="search-button" class="search-button">
+										          <div class="fa fa-search"></div>
+										        </span>
+										      </div>
+										    </div>
+											</li>											
+										</ul>
 
 										<!--Login -->
-										<div class="log-in-out hide-on-med-and-down">
+										<div class="log-in-out">
 											<a href="#"><i class="fa fa-sign-in"></i>Login</a>
-											<a href="#">Sign Up</a>
+											<a href="#">Create Account</a>
 										</div>
 										<!--/Login-->
 									</div>
@@ -93,20 +175,45 @@
 						<nav class="white" role="navigation">
 							<div class="nav-wrapper container">
 
-								<div class="row global-nav__search">
+								<div class="global-nav__mobile show-below-1266-only">
+
+									<div class="global-nav__mobile-container">
+
+										<div class="global-nav__mobile-child">
+
+											<a href="#" id="mobile-menu" class="left">
+											  <div class="mobile-menu-bars">
+											    <span></span>
+											    <span></span>
+											    <span></span>
+											    <div>Menu</div>
+											  </div>
+											</a>
+
+										</div>
+
+										<div class="global-nav__mobile-child">
+											<a href="#"><img src="images/logo-color.png" class="md-logo-header-mobile"/></a>
+										</div>
+
+										<div class="global-nav__mobile-child">
+											<a href="#">Login</a>
+											<a class="cd-search-trigger" href="#cd-search">Search<span></span></a>
+										</div>
+
+										<div id="cd-search" class="cd-search">
+											<form action="#">
+												<input type="search" id="search-query-mobile" placeholder="Search...">
+											</form>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="row global-nav__search show-above-1265-only">
 
 									<div class="col s2 m6">
-
-										<a href="#" id="mobile-menu" class="left">
-										  <div class="mobile-menu-bars">
-										    <span></span>
-										    <span></span>
-										    <span></span>
-										    <span></span>
-										    <div>Menu</div>
-										  </div>
-										</a>
-
 
 										<div class="global-nav-container left">
 											<ul class="right site-nav-content">
@@ -223,6 +330,7 @@
 																<li><a href="">Landfills</a></li>
 																<li><a href="">Resources Recovery</a></li>
 																<li><a href="">Trash & Recycling Centers</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
 														</li>
 														<li class="mega-container-child">
@@ -233,9 +341,10 @@
 																<li><a href="">Landfills</a></li>
 																<li><a href="">Resources Recovery</a></li>
 																<li><a href="">Trash & Recycling Centers</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
 														</li>
-														<li class="mega-container-child mega-container-child--last">
+														<li class="mega-container-child">
 															<h3><a href="">Boards</a></h3>
 															<ul>
 																<li><a href="">Home Chemical Collection Centers</a></li>
@@ -243,10 +352,8 @@
 																<li><a href="">Landfills</a></li>
 																<li><a href="">Resources Recovery</a></li>
 																<li><a href="">Trash & Recycling Centers</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
-														</li>
-														<li class="mega-container-button">
-															<a href="#" class="waves-effect wave-light btn blue">Learn More</a>
 														</li>
 													</ul>
 												</li>
@@ -262,6 +369,7 @@
 																<li><a href="">Landfills</a></li>
 																<li><a href="">Resources Recovery</a></li>
 																<li><a href="">Trash & Recycling Centers</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
 														</li>
 														<li class="mega-container-child">
@@ -270,13 +378,11 @@
 																<li><a href="">Home Chemical Collection Centers</a></li>
 																<li><a href="">Regional Transfer Stations</a></li>
 																<li><a href="">Landfills</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
 														</li>
-														<li class="mega-container-child mega-container-child--last mega-container-image">
+														<li class="mega-container-child mega-container-child__image">
 															<a href="#"><img src="images/black-history.jpg" alt="Black History Month"/></a>
-														</li>
-														<li class="mega-container-button">
-															<a href="#" class="waves-effect wave-light btn blue">Learn More</a>
 														</li>
 													</ul>
 												</li>
@@ -297,46 +403,16 @@
 																<li><a href="">Landfills</a></li>
 																<li><a href="">Resources Recovery</a></li>
 																<li><a href="">Trash & Recycling Centers</a></li>
+																<li class="mega-container-child__button"><a href="#" class="waves-effect wave-light btn blue">Learn More</a></li>
 															</ul>
 														</li>
-														<li class="mega-container-child mega-container-child--last mega-container-image">
+														<li class="mega-container-child mega-container-child__image">
 															<a href="#"><img src="images/black-history.jpg" alt="Black History Month"/></a>
-														</li>
-														<li class="mega-container-button">
-															<a href="#" class="waves-effect wave-light btn blue">Learn More</a>
 														</li>
 													</ul>
 												</li>
 											</ul>
 										</div>
-									</div>
-
-									<div class="col s10 m6">
-
-										<!--
-										<div class="input-group-search right">
-
-											<div class="column">
-												<a class='dropdown-button btn grey hide-on-med-and-down lighten-3' href='#' data-activates='searchDropdownNav'><span>Services</span> <i class="material-icons">arrow_drop_down</i></a>
-
-											  <ul id='searchDropdownNav' class='dropdown-content'>
-											    <li><a href="#">Products</a></li>
-											    <li><a href="#">Licenses</a></li>
-											    <li><a href="#">Grants</a></li>
-											  </ul>
-											</div>
-
-											<div class="column">
-												<input type="text" class="browser-default form-control form-control-rounded" placeholder="Search miamidade.gov" />
-											</div>
-
-											<div class="column">
-												<a class="waves-effect waves-light btn blue"><i class="material-icons">search</i></a>
-											</div>
-										</div>
-										-->
-
-
 									</div>
 
 								</div>
@@ -360,16 +436,16 @@
 								</li>
 								<li data-tab="mobile-site">
 									<div class="mobile-top-menu__tab">
-										<a href="#">Site</a>
+										<a href="#">Animals</a>
 									</div>
 								</li>
-								<li data-tab="mobile-login">
+								<!--li data-tab="mobile-login">
 									<div class="mobile-top-menu__tab">
 										<a href="#">
 											<i class="fa fa-user" aria-hidden="true"></i>
 										</a>
 									</div>
-								</li>
+								</li-->
 							</ul>
 						
 							<button id="mobile-global-close">
@@ -380,39 +456,34 @@
 								<div class="mobile-content-tab mobile-content-tab--active mobile-content__global-container" id="mobile-global">
 
 									<ul>
-										<li><a href="">Grants</a></li>
-										<li><a href="">Licenses</a></li>
-										<li><a href="">News</a></li>
-										<li><a href="">Permits</a></li>
-										<li><a href="">Products</a></li>
 										<li><a href="">Services</a></li>
+										<li><a href="">News</a></li>
+										<li><a href="">Calendar</a></li>
+										<li><a href="">Agencies</a></li>
+										<li><a href="">311/Help</a></li>
 									</ul>
 
 									<div class="divider-full"></div>
 
-									<div class="section-nav--mobile">
-									</div>
-
-									<div class="divider-full"></div>
-
 									<ul>
-										<li><a href="#">Calendar</a></li>
-										<li><a href="#">Feedback</a></li>
-										<li><a href="#">Translate</a></li>
+										<li><a href="#">Create Account</a></li>
 									</ul>
 								</div>
 
 								<div class="mobile-content-tab mobile-content__site-container" id="mobile-site">
 									<ul>
-										<li><a href="#">Site Content</a></li>
+										<li><a href="">Residents</a></li>
+										<li><a href="">Business</a></li>
+										<li><a href="">Employee</a></li>
+										<li><a href="">Government</a></li>
 									</ul>
 								</div>
 
-								<div class="mobile-content-tab mobile-content__user-container" id="mobile-login">
+								<!--div class="mobile-content-tab mobile-content__user-container" id="mobile-login">
 									<ul>
 										<li><a href="#">Login</a></li>
 									</ul>
-								</div>
+								</div-->
 
 							</div>
 						</div>
@@ -423,6 +494,10 @@
 				</div>
 			</header>
 			<!--/Orginial Header-->
+			
+			<!--mobile overlay-->
+			<div class="cd-overlay"></div>
+			<!--mobile overlay-->
 
 			<div id="main-body-content-container">
 			<!--Main Body -->
@@ -697,7 +772,7 @@
 											</div>
 
 											<div class="column">
-												<input type="text" class="browser-default form-control form-control-rounded" placeholder="Search miamidade.gov" />
+												<input type="text" class="browser-default form-control form-control-rounded auto-complete" placeholder="Search miamidade.gov" />
 											</div>
 
 											<div class="column">
@@ -750,9 +825,11 @@
 
 											<div class="button-container">
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Make Payment"><i class="fa fa-mdc-make-payment" aria-hidden="true"></i></a>
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Online Service"><i class="fa fa-mdc-online-service" aria-hidden="true"></i></a>
+
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Report Problem"><i class="fa fa-mdc-report-problem" aria-hidden="true"></i></a>
 
 										</div>
 
@@ -764,7 +841,7 @@
 
 										<div class="button-container">
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Make Payment"><i class="fa fa-mdc-make-payment" aria-hidden="true"></i></a>
 
 										</div>
 
@@ -777,9 +854,9 @@
 
 										<div class="button-container">
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Make Payment"><i class="fa fa-mdc-make-payment" aria-hidden="true"></i></a>
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Online Service"><i class="fa fa-mdc-online-service" aria-hidden="true"></i></a>
 
 										</div>
 
@@ -791,7 +868,7 @@
 
 										<div class="button-container">
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Online Service"><i class="fa fa-mdc-online-service" aria-hidden="true"></i></a>
 
 										</div>
 
@@ -803,9 +880,9 @@
 
 										<div class="button-container">
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Make Payment"><i class="fa fa-mdc-make-payment" aria-hidden="true"></i></a>
 
-											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+											<a class="btn white tooltipped round" data-position="top" data-delay="50" data-tooltip="Report Problem"><i class="fa fa-mdc-report-problem" aria-hidden="true"></i></a>
 
 										</div>
 
@@ -1046,8 +1123,9 @@
 
 		</div>
 	</body>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/datepicker.js"></script>
 	<script src="js/global-scripts.js"></script>
+
 </html>
